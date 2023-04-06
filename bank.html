@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator MoldBank</title>
+    <link href="banca.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>MoldBank</h1>
+        <p>Cea mai buna si sigura banca din Moldova</p>
+       
+    </header><br>
+
+    <div class="containerCredit">
+        <h1>Calculator Credite</h1>
+        <form>
+            <label for="sumaCredit">Suma imprumut:</label>
+            <input type="number" id="sumaCredit" placeholder="Intoduceti Suma" required>
+            <label for="rataCredit">Rata actuala a dobânzii este (%):</label>
+            <input type="number" id="rataCredit" value="4.6" required>
+            <label for="perioadaCredit">Perioada de plata (luni):</label>
+            <input type="number" id="perioadaCredit" placeholder="Intoduceti perioada dorita" required>
+            <button type="button" onclick="calculeazaCredit()">Calculeaza</button>
+        </form>
+        <div id="rezultatCredit"></div>
+    </div><br>
+
+    <div class="containerDobanda">
+        <h1>Calculator Depozit</h1>
+        <form>
+            <label for="sumaDobanda">Suma imprumut:</label>
+            <input type="number" id="sumaDobanda" placeholder="Intoduceti Suma" required>
+            <label for="rataDobanda">Rata actuala a dobanzii este (%):</label>
+            <input type="number" id="rataDobanda" value="1" required>
+            <label for="perioadaDobanda">Perioada (ani):</label>
+            <input type="number" id="perioadaDobanda" placeholder="Intoduceti perioada dorita" required>
+            <button type="button" onclick="calculeazaDepozit()">Calculeaza</button>
+        </form>
+        <div id="rezultatDobanda"></div>
+    </div>
+  
+       <h2> <a href="home.html">Home</a></h2>
+                  
+
+
+    <script type="text/javascript" src="banca.js"></script>
+
+
+</body>
+
+</html>
